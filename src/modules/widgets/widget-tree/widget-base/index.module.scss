@@ -1,0 +1,18 @@
+.widget {
+  border: 1px solid #cfd8dc;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  background: #fff;
+  border-radius: 3px;
+  flex: 1;
+  height: 100%;
+}
+
+.slots {
+  border-top: solid 1px #cfd8dc;
+  padding: 10px;
+}
+
+.widget-is-drag {
+  opacity: 0.4;
+  pointer-events: none; // Inability to drag widget to child elements
+}

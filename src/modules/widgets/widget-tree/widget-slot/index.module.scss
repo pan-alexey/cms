@@ -1,0 +1,30 @@
+.slot-container {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  background: #F5F7FA;
+  max-width: 100%;
+}
+
+.slot-name {
+  color:#b0bec5;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 4px;
+}
+
+.slot {
+  max-width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+// direction
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}

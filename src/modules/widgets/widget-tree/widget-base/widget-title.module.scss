@@ -1,0 +1,55 @@
+.title {
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.info .drag {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-right: 5px;
+  cursor: move;
+  margin-left: -5px;
+}
+
+.info .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 14px;
+    color: #78909c;
+  }
+}
+
+
+.actions {
+  display: flex;
+  gap: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+
+  .action {
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}

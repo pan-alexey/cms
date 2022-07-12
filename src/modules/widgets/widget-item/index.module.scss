@@ -1,0 +1,52 @@
+.item {
+  border: 1px solid #cfd8dc;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.item-is-drag {
+  opacity: 0.4;
+  pointer-events: none; // Inability to drag widget to child elements
+}
+
+.title {
+  padding: 5px 10px;;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.info .drag {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding-right: 5px;
+  cursor: move;
+  margin-left: -5px;
+}
+
+.info .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 14px;
+    color: #78909c;
+  }
+}
