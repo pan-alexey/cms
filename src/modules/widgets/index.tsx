@@ -1,7 +1,6 @@
 import * as React from "react";
 import WidgetsTreeProvider from './context'
 import * as WidgetTypes from './types';
-// import { Drawer } from 'antd';
 
 import { widgetsToBase } from './utils/adapters'
 import { WidgetSlot } from './widget-tree/widget-slot';

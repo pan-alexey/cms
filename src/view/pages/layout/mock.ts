@@ -99,6 +99,14 @@ export const remoteWidgetItems: Array<WidgetTypes.WidgetItem> = [
     slots: ['liar-slot-1', 'liar-slot-2']
   },
   {
+    name: "widget single",
+    platform: 'web',
+    version: "1.1.1",
+    owner: "infomodel",
+    widgetComponent: "single",
+    slots: ['test']
+  },
+  {
     name: "widget",
     platform: 'web',
     version: "1.1",

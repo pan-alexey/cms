@@ -9,16 +9,14 @@ export interface WidgetsTree {
   onDrop: OnDrop;
   onDelete: OnDelete;
   setSetting: SetSetting;
-  // showDrawer: () => void;
   editable: boolean;
 }
 
 export const WidgetsTreeDefaultValue: WidgetsTree = {
+  editable: true,
   onDrop: () => null,
   onDelete: () => null,
-  editable: true,
   setSetting: () => null,
-  // showDrawer: () => null,
 }
 
 export const WidgetsTreeContext = React.createContext<WidgetsTree>(WidgetsTreeDefaultValue);
@@ -33,7 +31,6 @@ export const WidgetsTreeProvider : React.FC<{
   onDrop: OnDrop;
   onDelete: OnDelete;
   setSetting: SetSetting;
-  // showDrawer: () => void;
 }> = (props) => {
   return <WidgetsTreeContext.Provider value={props}>
     {props.children}

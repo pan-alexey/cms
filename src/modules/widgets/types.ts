@@ -31,6 +31,8 @@ export interface WidgetBase extends Widget {
 
   $$setting: WidgetSetting; // The widget's data in the tree. No effect on remote data
   // need only render
+
+  $$key: string; // genered uniq key
   $$mark?: boolean; // mark for delete step
   $$path?: WidgetPath; // generated path in layout tree (in frontend app widget-slots components)
 }

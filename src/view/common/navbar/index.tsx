@@ -11,15 +11,12 @@ export default function Navbar() {
       <span className="navbar-logo-icon">
         <MdViewQuilt />
       </span>
-      <span className="navbar-logo-name">LaaS</span>
+      <span className="navbar-logo-name">LaaS Concept</span>
     </div>
     <div className="navbar-menu">
-    <Button type="primary">layut builder</Button>
-    <Button>relations</Button>
-    <Button type="dashed">pages</Button>
-    <br />
-    <Button type="text">setting</Button>
-    <Button type="link">history</Button>
+      <Button type="text">Шаблоны</Button>
+      <Button type="text">Страницы</Button>
+      <Button type="text">Зависиости</Button>
     </div>
   </div>
   );

@@ -1,4 +1,5 @@
 import * as WidgetTypes from '../types';
+import uniqueId from 'lodash/uniqueId'
 
 const getDefaultWidgetSetting = (): WidgetTypes.WidgetSetting => {
   return {
@@ -33,6 +34,7 @@ export const itemToBase = (widget: WidgetTypes.WidgetItem ): WidgetTypes.WidgetB
     data: {}, // fill data
     slots: widgetSlots,
     $$setting: getDefaultWidgetSetting(),
+    $$key: uniqueId('widget')
   }
 
   return reult;
@@ -53,8 +55,9 @@ export const widgetsToBase = (widgets: Array<WidgetTypes.Widget>): Array<WidgetT
     result.push({
       ...item,
       data: item.data || {},
-      slots, // patch slots
+      slots, // convert slots
       $$setting: getDefaultWidgetSetting(),
+      $$key: uniqueId('widget')
     })
   });
   return result
@@ -79,7 +82,7 @@ export const baseToWidget = (widgets: Array<WidgetTypes.WidgetBase>): Array<Widg
       widgetComponent: item.widgetComponent,
       schema: item.schema,
       data: item.data || {},
-      slots, // patch slots
+      slots, // convert slots
     })
   });
 

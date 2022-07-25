@@ -4,12 +4,8 @@
   flex-direction: column;
 }
 
-.page-menu {
-  display: block;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  background: #fff;
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
+.page-actions {
+  height: 100px;
 }
 
 .view {
@@ -29,13 +25,6 @@
   flex: 1 1;
   display: flex;
   flex-direction: column;
-}
-
-.widget-header {
-  display: block;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  background: #fff;
-  padding: 5px;
 }
 
 .widget-body {
@@ -62,14 +51,6 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
-}
-
-.items-header {
-  display: block;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  background: #fff;
-  border-bottom: 1px solid #ccc;
-  padding: 5px;
 }
 
 .items-content {

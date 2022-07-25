@@ -22,13 +22,12 @@ export const WidgetSlot: React.FC<{
 }) => {
   const path = [...$$path, -1];
   const sortOnly = widgets.length >= max;
-
   const elements: Array<React.ReactNode> = [];
-  elements.push(<DropZone direction={direction} sortOnly={sortOnly} $$path={path} key={uniqueId()}/>);
+  elements.push(<DropZone direction={direction} sortOnly={sortOnly} $$path={path} key={uniqueId('DropZone')}/>);
   widgets.forEach((widget, i) => {
     const path = [...$$path, i];
-    elements.push(<WidgetBase $$path={path} {...widget} key={uniqueId()} />);
-    elements.push(<DropZone direction={direction} sortOnly={sortOnly} $$path={path} key={uniqueId()}/>);
+    elements.push(<WidgetBase $$path={path} {...widget} key={uniqueId('widget')}/>);
+    elements.push(<DropZone direction={direction} sortOnly={sortOnly} $$path={path} key={uniqueId('DropZone')}/>);
   });
 
   return (
@@ -55,7 +54,7 @@ export const WidgetSlotSingle: React.FC<{
       <DropZone
         direction={"column"}
         $$path={[...$$path, -1]}
-        key={uniqueId()}
+        key={uniqueId('DropZone')}
         sortOnly={false}
       />
     );  
@@ -63,7 +62,7 @@ export const WidgetSlotSingle: React.FC<{
 
   widgets.forEach((widget, i) => {
     const path = [...$$path, i];
-    elements.push(<WidgetBase $$path={path} {...widget} key={uniqueId()} />);
+    elements.push(<WidgetBase $$path={path} {...widget} key={uniqueId('WidgetBase')} />);
   });
 
   return (

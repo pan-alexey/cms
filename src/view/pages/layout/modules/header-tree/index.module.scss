@@ -1,0 +1,42 @@
+.widget-header {
+  display: flex;
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+  background: #fff;
+  padding: 10px 20px;
+  gap: 20px;
+  height: 110px;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.actions-info {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.info-title {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.info-description {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.actions-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.actions-versions {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
